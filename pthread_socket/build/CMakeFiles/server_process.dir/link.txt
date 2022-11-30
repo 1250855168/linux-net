@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/server_process.dir/main.c.o CMakeFiles/server_process.dir/src/socket.c.o  -o server_process  -lpthread 

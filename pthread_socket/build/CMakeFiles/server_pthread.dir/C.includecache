@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xxx/Me/linux_net/pthread_socket/include/socket.h
+sys/socket.h
+-
+
+/home/xxx/Me/linux_net/pthread_socket/main.c
+./include/socket.h
+/home/xxx/Me/linux_net/pthread_socket/include/socket.h
+netinet/in.h
+-
+pthread.h
+-
+signal.h
+-
+stdio.h
+-
+string.h
+-
+sys/wait.h
+-
+unistd.h
+-
+wait.h
+-
+
