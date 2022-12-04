@@ -1,0 +1,1 @@
+/usr/bin/gcc -g  -rdynamic CMakeFiles/select.dir/main.c.o CMakeFiles/select.dir/src/socket.c.o  -o select  -lpthread 

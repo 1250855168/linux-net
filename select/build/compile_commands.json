@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/xxx/Me/linux_net/select/build",
+  "command": "/usr/bin/gcc   -g   -o CMakeFiles/select.dir/main.c.o   -c /home/xxx/Me/linux_net/select/main.c",
+  "file": "/home/xxx/Me/linux_net/select/main.c"
+},
+{
+  "directory": "/home/xxx/Me/linux_net/select/build",
+  "command": "/usr/bin/gcc   -g   -o CMakeFiles/select.dir/src/socket.c.o   -c /home/xxx/Me/linux_net/select/src/socket.c",
+  "file": "/home/xxx/Me/linux_net/select/src/socket.c"
+}
+]
