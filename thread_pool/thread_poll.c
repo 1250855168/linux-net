@@ -362,9 +362,10 @@ int is_thread_alive(pthread_t tid)
 /* 线程池中的线程，模拟处理业务 */
 void *process(void *arg)
 {
-    printf("thread 0x%x working on task %d\n ",(unsigned int)pthread_self(),(int)arg);
+    int *Arg = arg; 
+    printf("thread 0x%x working on task %d\n ",(unsigned int)pthread_self(),*Arg);
     sleep(1);                           //模拟 小---大写
-    printf("task %d is end\n",(int)arg);
+    printf("task %d is end\n",*Arg);
 
     return NULL;
 }
