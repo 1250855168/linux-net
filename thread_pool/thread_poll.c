@@ -211,7 +211,8 @@ void *threadpool_thread(void *threadpool)
         pthread_mutex_unlock(&(pool->thread_counter));
 
         (*(task.function))(task.arg);                                           /*执行回调函数任务*/
-        //task.function(task.arg);                                              /*执行回调函数任务*/
+        //task.function(task.arg);  
+                                                    /*执行回调函数任务*/
 
         /*任务结束处理*/ 
         printf("thread 0x%x end working\n", (unsigned int)pthread_self());
@@ -362,7 +363,7 @@ int is_thread_alive(pthread_t tid)
 /* 线程池中的线程，模拟处理业务 */
 void *process(void *arg)
 {
-    int *Arg = arg; 
+    int *Arg = (int*)arg; 
     printf("thread 0x%x working on task %d\n ",(unsigned int)pthread_self(),*Arg);
     sleep(1);                           //模拟 小---大写
     printf("task %d is end\n",*Arg);
